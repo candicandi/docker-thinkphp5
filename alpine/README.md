@@ -1,9 +1,7 @@
 # What is thinkphp5
----
 The thinkphp5 image containes Nginx, PHP, PHP-FPM. It can facilitate you to quickly deploy small and medium php projects (including php web and php websocket).
 
 # How to use this image
----
 The thinkphp5 image exposes port 80 and mounts `/app` directory.  
 ## Exposing external port
 ```
@@ -19,3 +17,6 @@ The web homepage defaults to `index.php` and `index.html`. The configuration of 
 
 ## How to run WebSocket
 You can build again based on this image, change `ENTRYPOINT` to `php-fpm7 && nginx && WebSocket script && tail -f /dev/null`, If WebSocket is running in the foreground, `ENTRYPOINT` is `php-fpm7 && nginx && websocket script`.
+
+# License
+MIT.
